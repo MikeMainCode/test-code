@@ -1,0 +1,19 @@
+<h1>{{ title }}</h1>
+
+<div class="row">
+  <app-search (searchOutput)="searchChanges($event)"></app-search>
+</div>
+
+<hr>
+
+<div class="row">
+  <app-profile [searchInput]="searchResult"></app-profile>
+</div>
+
+<hr>
+
+<div class="row">
+  <app-repository [searchInput]="searchResult"></app-repository>
+</div>
+
+<ngx-spinner type="ball-scale-multiple"></ngx-spinner>
